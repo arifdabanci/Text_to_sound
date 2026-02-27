@@ -21,7 +21,7 @@ headers = {
 
 # AI'ın okuyacağı metin. Üç nokta (...) koyarsan nefes alır ve duraklar.
 data = {
-  "text": "Sinyal... ve gürültü. İkisi de zihnin frekanslarında yankılanıyor. RoboAI Cafe'ye... hoş geldin.",
+  "text": " Bu durum, piyasa analistleri tarafından AI teknolojisinin potansiyeline olan inancın azaldığı anlamına gelmeyip, aksine daha sağlıklı ve sürdürülebilir bir büyüme evresine geçişin bir göstergesi olarak yorumlanmaktadır.",
   "model_id": "eleven_multilingual_v2",
   "voice_settings": {
     "stability": 0.4, # Düşük tutarsan daha duygulu ve değişken okur
