@@ -1,0 +1,28 @@
+name: RoboAI Ses Stüdyosu
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ses_olustur:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodları depodan çek
+        uses: actions/checkout@v3
+
+      - name: Python'u hazırla
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Gerekli ses kütüphanesini yükle
+        run: pip install edge-tts
+
+      - name: MP3 Sesi Üret
+        run: python ses_uret.py
+
+      - name: MP3 Dosyasını İndirilebilir Yap
+        uses: actions/upload-artifact@v4
+        with:
+          name: RoboAI_Vokal_Dosyasi
+          path: roboai_vokal.mp3
