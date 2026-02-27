@@ -15,6 +15,7 @@ jobs:
         with:
           python-version: '3.10'
 
+      # İŞTE EKSİK OLAN ALET ÇANTASI BURADA İNDİRİLİYOR
       - name: Kütüphaneleri yükle
         run: pip install requests
 
