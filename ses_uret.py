@@ -9,7 +9,7 @@ if not API_KEY:
     exit()
 
 # Adam isimli, çok derin ve sinematik bir erkek sesi kullanıyoruz (Voice ID)
-VOICE_ID = "pNInz6obpgDQGcFmaJcg" 
+VOICE_ID = "nPczCjzI2devNBz1zQrb" 
 
 url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
 
