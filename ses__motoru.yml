@@ -15,14 +15,16 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Gerekli ses kütüphanesini yükle
-        run: pip install edge-tts
+      - name: Kütüphaneleri yükle
+        run: pip install requests
 
-      - name: MP3 Sesi Üret
+      - name: ElevenLabs ile MP3 Üret
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: python ses_uret.py
 
       - name: MP3 Dosyasını İndirilebilir Yap
         uses: actions/upload-artifact@v4
         with:
-          name: RoboAI_Vokal_Dosyasi
-          path: roboai_vokal.mp3
+          name: Gercek_Insan_Sesi_Vokal
+          path: gercek_vokal.mp3
